@@ -8,16 +8,36 @@
     tools:context=".activities.RegistrationActivity"
     android:background="#f0f4c3">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarRegister1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/regToolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <EditText
         android:id="@+id/etxtRegName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Name (minimum 3 characters)"
+        android:layout_below="@+id/appBarRegister1"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         android:layout_marginHorizontal="10dp"
         android:padding="15dp"
-        android:inputType="text" />
+        android:inputType="text"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/etxtRegMail"
@@ -28,7 +48,9 @@
         android:layout_marginBottom="10dp"
         android:layout_marginHorizontal="10dp"
         android:padding="15dp"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/etxtRegNumber"
@@ -40,7 +62,9 @@
         android:layout_marginBottom="10dp"
         android:padding="15dp"
         android:inputType="number"
-        android:maxLength="10"/>
+        android:maxLength="10"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/etxtRegAddress"
@@ -51,7 +75,9 @@
         android:layout_marginBottom="10dp"
         android:layout_marginHorizontal="10dp"
         android:padding="15dp"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/etxtRegPwd"
@@ -62,7 +88,9 @@
         android:layout_marginBottom="10dp"
         android:layout_marginHorizontal="10dp"
         android:padding="15dp"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
     <EditText
         android:id="@+id/etxtRegPwdCnf"
@@ -73,7 +101,9 @@
         android:layout_marginBottom="10dp"
         android:layout_marginHorizontal="10dp"
         android:padding="15dp"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
     <Button
         android:id="@+id/btnRegistration"

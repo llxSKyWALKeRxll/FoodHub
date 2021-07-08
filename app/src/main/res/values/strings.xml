@@ -5,7 +5,7 @@
     <string name="login_hint">LOG IN</string>
     <string name="forgot_pwd_hint">Forgot Password?</string>
     <string name="registration_hint">Register Yourself</string>
-    <string name="preference_file">SkyDroid Preferences</string>
+    <string name="preference_file">FoodHub Preferences</string>
     <string name="open_drawer">Open Drawer</string>
     <string name="close_drawer">Close Drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
