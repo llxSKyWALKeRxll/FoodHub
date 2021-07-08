@@ -1,4 +1,4 @@
-package com.internshala.activitylifecycle
+package com.internshala.activitylifecycle.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.internshala.activitylifecycle.R
 
 class RegistrationActivity : AppCompatActivity() {
 

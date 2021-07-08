@@ -1,10 +1,11 @@
-package com.internshala.activitylifecycle
+package com.internshala.activitylifecycle.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.internshala.activitylifecycle.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,6 @@ class SplashActivity : AppCompatActivity() {
             val switchScreen = Intent(this@SplashActivity, LoginActivity::class.java)
             startActivity(switchScreen)
             this.finish()
-        }, 2000)
+        }, 1000)
     }
 }

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
-    android:background="#d4e157">
+    tools:context=".activities.SplashActivity"
+    android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/imgSplash"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/splash_chakra"
+        android:src="@drawable/ic_food_icon"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="20dp" />
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="60sp"
-        android:text="SkyDroid"
+        android:text="FoodHub"
         android:layout_below="@+id/imgSplash"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"

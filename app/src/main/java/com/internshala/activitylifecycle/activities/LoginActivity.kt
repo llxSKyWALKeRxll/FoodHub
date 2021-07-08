@@ -1,14 +1,14 @@
-package com.internshala.activitylifecycle
+package com.internshala.activitylifecycle.activities
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import androidx.appcompat.widget.Toolbar
+import com.internshala.activitylifecycle.R
 
 class LoginActivity : AppCompatActivity() {
 
@@ -17,6 +17,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var btnLogIN: Button
     lateinit var tvForgotPwd: TextView
     lateinit var tvRegistration: TextView
+    lateinit var loginToolbar: Toolbar
 
     lateinit var sharedPreferences: SharedPreferences
 
@@ -45,6 +46,9 @@ class LoginActivity : AppCompatActivity() {
         btnLogIN = findViewById(R.id.btnLogIn)
         tvForgotPwd = findViewById(R.id.tvForgotPwd)
         tvRegistration = findViewById(R.id.tvRegistration)
+        loginToolbar = findViewById(R.id.loginToolbar)
+
+        setupLoginToolbar()
 
         btnLogIN.setOnClickListener {
             val mobileNumber = tvNumber.text.toString()
@@ -144,5 +148,23 @@ class LoginActivity : AppCompatActivity() {
     fun savePreferencesTrue(title: String) {
         sharedPreferences.edit().putString("Title", title).apply()
         sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
+    }
+
+    override fun onBackPressed() {
+        val dialog = AlertDialog.Builder(this@LoginActivity)
+        dialog.setTitle("Confirmation")
+        dialog.setMessage("Exit the app?")
+        dialog.setPositiveButton("Yes"){text, listener ->
+            this.finish()
+        }
+        dialog.setNegativeButton("No"){text, listener ->
+        }
+        dialog.create()
+        dialog.show()
+    }
+
+    fun setupLoginToolbar() {
+        setSupportActionBar(loginToolbar)
+        supportActionBar?.title = "FoodHub: Log in"
     }
 }

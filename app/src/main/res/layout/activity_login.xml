@@ -5,15 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0f4c3"
-    tools:context=".LoginActivity">
+    tools:context=".activities.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/loginToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
+        android:layout_below="@id/appBarLogin"
         android:id="@+id/imgHome"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:src="@drawable/home_surya"
+        android:src="@drawable/ic_food_icon"
         tools:ignore="ContentDescription" />
 
     <EditText
