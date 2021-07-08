@@ -63,9 +63,9 @@
                 android:layout_below="@id/rowName"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:text="300/person"
+                android:text="300"
                 android:padding="2dp"
-                android:layout_marginHorizontal="2dp"/>
+                android:layout_marginLeft="2dp"/>
 
         </RelativeLayout>
 
