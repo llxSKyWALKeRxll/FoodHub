@@ -1,4 +1,4 @@
-# SkyDroid
+# FoodHub
 
 I am currently working on an android application as a part of the training course "Android Application Development", which is conducted by Internshala.  
 So far, I am finding android app development to be quite easy, understandable and fun as most of the concepts being used here are the concepts that I have already studied before in Java and HTML.  
